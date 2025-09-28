@@ -1,0 +1,112 @@
+/* Основной стиль */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  background: linear-gradient(135deg, #0f0f1a, #1a1a2e);
+  color: #fff;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+/* Неоновая подсветка */
+.overlay {
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle at center, rgba(0, 183, 255, 0.1), transparent 70%);
+  animation: move 10s infinite alternate;
+  z-index: -1;
+}
+
+@keyframes move {
+  from { transform: translate(0, 0); }
+  to { transform: translate(20%, 20%); }
+}
+
+header {
+  padding: 40px 20px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 3em;
+  font-weight: bold;
+  text-shadow: 0 0 20px rgba(0, 183, 255, 0.7);
+}
+
+.subtitle {
+  margin-top: 10px;
+  font-size: 1.2em;
+  color: #aaa;
+}
+
+#lang-switcher {
+  margin-top: 15px;
+  padding: 6px 12px;
+  border-radius: 8px;
+  background: #111;
+  color: #fff;
+  border: 1px solid #00b7ff;
+}
+
+/* Секции */
+main {
+  padding: 40px 20px;
+}
+
+h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  text-shadow: 0 0 15px rgba(0, 183, 255, 0.7);
+}
+
+/* Кнопки */
+.btn-group {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 25px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #fff;
+  background: #222;
+  border: 2px solid #00b7ff;
+  box-shadow: 0 0 15px rgba(0, 183, 255, 0.5);
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  background: #00b7ff;
+  color: #000;
+  box-shadow: 0 0 25px rgba(0, 183, 255, 1);
+}
+
+.donate-btn {
+  margin-top: 20px;
+  background: #e24a63;
+  border-color: #ff5c7a;
+  box-shadow: 0 0 15px rgba(255, 92, 122, 0.6);
+}
+
+.donate-btn:hover {
+  background: #ff5c7a;
+  color: #fff;
+  box-shadow: 0 0 25px rgba(255, 92, 122, 1);
+}
+
+/* Footer */
+footer {
+  margin-top: 50px;
+  padding: 20px;
+  font-size: 0.9em;
+  color: #888;
+  border-top: 1px solid #222;
+}

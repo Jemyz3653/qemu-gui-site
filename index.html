@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QEMU Manager GUI</title>
+  <link rel="icon" href="myicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="overlay"></div>
+  <header>
+    <h1 data-i18n="title">QEMU Manager GUI</h1>
+    <p class="subtitle" data-i18n="subtitle">
+      Open Source проект | By: <a href="https://github.com/Jemyz3653/QEMU-Manager-GUI">Jemyz36</a>
+    </p>
+
+    <!-- Переключение языка -->
+    <select id="lang-switcher"></select>
+  </header>
+
+  <main>
+    <section class="downloads">
+      <h2 data-i18n="download_title">Скачать</h2>
+      <div class="btn-group">
+        <a href="https://disk.yandex.ru/d/_WnSnhZAwTgWqw" class="btn" data-i18n="btn_exe">
+          ⬇ Windows (EXE)
+        </a>
+        <a href="https://disk.yandex.ru/d/eYQfX8aRj3X_Ug" class="btn" data-i18n="btn_src">
+          💻 Исходники (Python)
+        </a>
+        <a href="https://disk.yandex.ru/i/CjP7iSa1HcHTdg" class="btn" data-i18n="btn_icon">
+          🖼 Иконка
+        </a>
+      </div>
+    </section>
+
+    <section class="donate">
+      <h2 data-i18n="donate_title">Поддержать проект</h2>
+      <p data-i18n="donate_desc">Вы можете помочь развитию через Donation Alerts:</p>
+      <a href="https://dalink.to/jemyz36" target="_blank" class="btn donate-btn">
+        💖 <span data-i18n="donate_btn">Задонатить</span>
+      </a>
+    </section>
+  </main>
+
+  <footer>
+    <p data-i18n="footer">© 2025 QEMU Manager GUI | Open Source | By: Jemyz36</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
